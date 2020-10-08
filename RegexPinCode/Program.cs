@@ -7,9 +7,10 @@ namespace RegexPinCode
     {
         static void Main(string[] args)
         {
-            Pattern patterns = new Pattern();
-            bool result = patterns.validatePinCode("1234567");
-            Console.WriteLine(result);
+            Console.WriteLine("Welcome to Email Validation Process");
+            CheckEmailList user = new CheckEmailList();
+            user.CheckEmail();
+            Console.WriteLine(user.email);
         }
     }
 }
